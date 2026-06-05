@@ -1,0 +1,9 @@
+Komponen,Nama Pin Komponen,GPIO ESP32 C3 SM,Catatan
+SD Card,SPI MISO,GPIO 5,Jalur data dari SD Card - Tetap (Native SPI MISO / FSPIQ)
+,SPI MOSI,GPIO 6,Jalur data menuju SD Card - Tetap (Native SPI MOSI / FSPID)
+,SPI SCK,GPIO 4,Jalur Clock SPI - Tetap (Native SPI CLK / FSPICLK)
+,SPI CS,GPIO 10,"Chip Select (Gunakan GPIO standar bebas)  - Bebas dari fungsi strapping, aman untuk Chip Select."
+INMP441,I2S SCK (Clock),GPIO 1,Serial Clock untuk data audio - Tetap (Aman digunakan)
+(Mikrofon),I2S WS (Word Select),GPIO 0,Left/Right Channel Select - GPIO 0 yang aman.
+,I2S SD (Serial Data),GPIO 3,Data out dari mikrofon ke MCU - Tetap (Aman digunakan)
+,L/R Pin,GND,Mengatur mikrofon ke Left Channel - Tetap (Mengatur ke Left Channel)
