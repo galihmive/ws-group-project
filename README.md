@@ -1,4 +1,4 @@
-## Proyek WS Group
+## WS Group Project
 Sebuah proyek dengan tujuan pengintegrasian perangkat telekomunikasi, melakukan penggabungan sensor atau komponen pada dekat PCB perangkat yang memiliki RF tinggi.
 
 Percobaan 1 (G1):
