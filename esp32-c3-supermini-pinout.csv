@@ -1,0 +1,14 @@
+PIN,LABEL,WHY_AVOID,TYPE
+IO0,GPIO0,No boot sequence involvement; no USB or JTAG conflicts; freely assignable,SAFE
+IO1,GPIO1,No boot sequence involvement; no USB or JTAG conflicts; freely assignable,SAFE
+IO3,GPIO3,No flash/PSRAM connections; freely assignable without issues,SAFE
+IO10,GPIO10,No flash/PSRAM connections; freely assignable without issues,SAFE
+IO2,GPIO2,Must be held high during boot (if low on reset normal flash boot may fail),Strapping
+IO4,MTMS,Used during boot; JTAG TMS for debugging; acts as Quad-SPI flash IO (hold data line) in internal-flash variants,JTAG
+IO5,MTDI,Used during boot; JTAG TDI for debugging; acts as Quad-SPI flash IO (write-protect data line) in internal-flash variants,JTAG
+IO6,MTCK,Used during boot; JTAG TCK for debugging; provides flash clock in internal-flash variants,JTAG
+IO7,MTDO,Used during boot; JTAG TDO for debugging; acts as Quad-SPI flash IO (data line) in internal-flash variants,JTAG
+IO8,GPIO8,Must be held high during reset (if low UART flashing/boot may not work),Strapping
+IO9,GPIO9,Controls boot mode on reset (HIGH for normal flash boot LOW enters serial download mode),Strapping
+IO20,U0RXD,Used as UART0 receive (console/bootloader); repurposing may disable serial programming and debug logs,UART
+IO21,U0TXD,Used as UART0 transmit (console/bootloader); repurposing may disable serial console output and printing,UART
